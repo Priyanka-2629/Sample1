@@ -1,0 +1,24 @@
+ IDENTIFICATION DIVISION.
+   PROGRAM-ID. CheckEvenOdd.
+
+   ENVIRONMENT DIVISION.
+   INPUT-OUTPUT SECTION.
+
+   DATA DIVISION.
+   WORKING-STORAGE SECTION.
+   01 NUM      PIC 9(5).
+   01 REMAINDER PIC 9.
+
+   PROCEDURE DIVISION.
+       DISPLAY "Enter a number: " WITH NO ADVANCING.
+       ACCEPT NUM.
+
+       COMPUTE REMAINDER = NUM MOD 2.
+
+       IF REMAINDER = 0 THEN
+           DISPLAY "The number is EVEN."
+       ELSE
+           DISPLAY "The number is ODD."
+       END-IF.
+
+       STOP RUN.

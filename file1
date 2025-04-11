@@ -1,8 +1,8 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. CheckEvenOdd.
-
-       ENVIRONMENT DIVISION.
-       INPUT-OUTPUT SECTION.
+               
+        ENVIRONMENT DIVISION.       
+        INPUT-OUTPUT SECTION.
 
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -10,6 +10,8 @@
        01  REM      PIC 9.
        01  Result   PIC 9(10).
        01  Rem2     pic 9(10).
+       01  Rem3     pic 9(05).
+       01  rem4     pic 9(02).
 
        PROCEDURE DIVISION.
            DISPLAY "Enter a number: " WITH NO ADVANCING.
@@ -20,5 +22,6 @@
            ELSE
             DISPLAY "The number is ODD."
            END-IF.
-
+              DISPLAY rem4 .
            STOP RUN.
+           

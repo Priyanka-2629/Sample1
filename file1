@@ -12,7 +12,9 @@
        01  Rem2     pic 9(10).
        01  Rem3     pic 9(05).
        01  rem4     pic 9(02).
-
+       01  result1   pic 9(10).
+       01  result2   pic 9(10).
+       01  result3   pic 9(10).
        PROCEDURE DIVISION.
            DISPLAY "Enter a number: " WITH NO ADVANCING.
            ACCEPT NUM.

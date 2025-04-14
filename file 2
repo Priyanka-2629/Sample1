@@ -5,4 +5,5 @@
 //             DISP=(NEW,CATLG,DELETE),
 //             UNIT=SYSDA,
 //             SPACE=(CYL,(1,1)),
+//             volume=ser=1234567,
 //             DCB=(RECFM=FB,LRECL=80,BLKSIZE=800)
